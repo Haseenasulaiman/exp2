@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - E-Book Store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/shop.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">E-Book Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="shop-hero">
+        <div class="overlay"></div>
+        <div class="container text-center position-relative">
+            <h1>Explore Our E-Books</h1>
+            <p>Find the best books in different genres and start reading today.</p>
+        </div>
+    </section>
+
+    <!-- Category Filters -->
+    <div class="category-filter text-center">
+        <button id="filter-all" class="filter-btn">All</button>
+        <button id="filter-fiction" class="filter-btn">Fiction</button>
+        <button id="filter-non-fiction" class="filter-btn">Non-Fiction</button>
+        <button id="filter-sci-fi" class="filter-btn">Sci-Fi & Fantasy</button>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="container shop-products">
+        <div class="row g-4">
+
+            <!-- Product Cards -->
+            <div class="col-md-4 book-card fiction">
+                <div class="card">
+                    <img src="assets/img/f1.jpg" class="card-img-top" alt="Book 1">
+                    <div class="card-body">
+                        <h4 class="card-title">DAUGHTER OF MAN</h4>
+                        <p class="card-text">A thrilling story full of adventure and surprises.</p>
+                        <button class="btn add-to-cart"
+                data-title="DAUGHTER OF MAN"
+                data-price="9.99"
+                data-image="assets/img/f1.jpg">
+                Add to cart
+            </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 book-card non-fiction">
+                <div class="card">
+                    <img src="assets/img/n1.webp" class="card-img-top" alt="Book 2">
+                    <div class="card-body">
+                        <h4 class="card-title">THE LOST CASTLE</h4>
+                        <p class="card-text">Learn from real experiences and gain knowledge.</p>
+                        <button class="btn add-to-cart"
+                data-title="THE LOST CASTLE"
+                data-price="45.00"
+                data-image="assets/img/n1.webp">
+                Add to cart
+            </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 book-card sci-fi">
+                <div class="card">
+                    <img src="assets/img/s1.jpg" class="card-img-top" alt="Book 3">
+                    <div class="card-body">
+                        <h4 class="card-title">THE ICE QUEEN</h4>
+                        <p class="card-text">Explore futuristic worlds and advanced technology.</p>
+                        <button class="btn add-to-cart"
+                data-title="THE ICE QUEEN"
+                data-price="34.78"
+                data-image="assets/img/s1.jpg">
+                Add to cart
+            </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 book-card fiction">
+                <div class="card">
+                    <img src="assets/img/f2.png" class="card-img-top" alt="Book 4">
+                    <div class="card-body">
+                        <h4 class="card-title">CURSE OF INFINITI</h4>
+                        <p class="card-text">A deeply engaging story with unforgettable characters.</p>
+                        <button class="btn add-to-cart"
+                data-title="CURSE OF INFINITI"
+                data-price="24.87"
+                data-image="assets/img/f2.png">
+                Add to cart
+            </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 book-card non-fiction">
+                <div class="card">
+                    <img src="assets/img/n2.jpg" class="card-img-top" alt="Book 5">
+                    <div class="card-body">
+                        <h4 class="card-title">THE POLITICAL GAMES</h4>
+                        <p class="card-text">Gain insights from top industry experts.</p>
+                        <button class="btn add-to-cart"
+                data-title="THE POLITICAL GAMES"
+                data-price="12.09"
+                data-image="assets/img/n2.jpg">
+                Add to cart
+            </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 book-card sci-fi">
+                <div class="card">
+                    <img src="assets/img/s2.jpg" class="card-img-top" alt="Book 6">
+                    <div class="card-body">
+                        <h4 class="card-title">THE SINGING STAR</h4>
+                        <p class="card-text">A thrilling journey through the stars and beyond.</p>
+                        <button class="btn add-to-cart"
+                data-title="THE SINGING STAR"
+                data-price="78.54"
+                data-image="assets/img/s2.jpg">
+                Add to cart
+            </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 book-card fiction">
+                <div class="card">
+                    <img src="assets/img/f3.avif" class="card-img-top" alt="Book 7">
+                    <div class="card-body">
+                        <h4 class="card-title">PEICES OF INFINITY</h4>
+                        <p class="card-text">A beautifully written novel that touches the heart.</p>
+                        <button class="btn add-to-cart"
+                data-title="PEICES OF INFINITY"
+                data-price="75.93"
+                data-image="assets/img/f3.avif">
+                Add to cart
+            </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 book-card non-fiction">
+                <div class="card">
+                    <img src="assets/img/n3.jpg" class="card-img-top" alt="Book 8">
+                    <div class="card-body">
+                        <h5 class="card-title">NO ONE LEFT TO TELL</h5>
+                        <p class="card-text">A must-read for those looking for inspiration.</p>
+                        <button class="btn add-to-cart"
+                data-title="NO ONE LEFT TO TELL"
+                data-price="53.87"
+                data-image="assets/img/n3.jpg">
+                Add to cart
+            </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 book-card sci-fi">
+                <div class="card">
+                    <img src="assets/img/s3.webp" class="card-img-top" alt="Book 9">
+                    <div class="card-body">
+                        <h4 class="card-title">THE EXILED</h4>
+                        <p class="card-text">An intergalactic adventure awaits you.</p>
+                        <button class="btn add-to-cart"
+                data-title="THE EXILED"
+                data-price="36.00"
+                data-image="assets/img/s3.webp">
+                Add to cart
+            </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <p>&copy; 2025 E-Book Store. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/shop.js"></script>
+</body>
+</html> 
